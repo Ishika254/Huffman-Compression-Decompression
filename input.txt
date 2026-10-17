@@ -1,0 +1,24 @@
+//sample input file
+
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+2
+hello world
+v
+hello world
+hello worldhello worldhello worldhello worldhello worldhello worldhello worldhello world
+hello worldhello worldhello world
+hello worldhello worldhello world
+hello world
+hello world
+hello world
+hello world
+hello world'
+v
+
+hello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello world
