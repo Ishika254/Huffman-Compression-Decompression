@@ -1,0 +1,192 @@
+
+/* Main Page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #080d24, #20245b);
+    color: white;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Project Heading */
+h1 {
+    font-size: 45px;
+    color: #8daaff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #b5c5ff;
+}
+
+.container > p {
+    color: #c5c9df;
+}
+
+/* File Upload Box */
+.upload-box {
+    background: #1b2448;
+    border: 2px dashed #778dff;
+    border-radius: 18px;
+    padding: 35px 20px;
+    margin-top: 35px;
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    border-color: #a8baff;
+    background: #26315b;
+}
+
+.upload-box p {
+    color: #bfc7e5;
+}
+
+input[type="file"] {
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+button {
+    background: linear-gradient(135deg, #5478ff, #8354d9);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #7493ff, #9a6cf0);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Processing Status */
+#status {
+    padding: 15px;
+    color: #90e4ff;
+    font-weight: bold;
+}
+
+/* Result, Codes and Tree Cards */
+.result,
+.codes,
+.tree {
+    background: #1b2448;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 16px;
+    border: 1px solid #394878;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Result Details */
+.result p {
+    background: #27335d;
+    padding: 14px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.result span {
+    color: #91e9ff;
+    font-weight: bold;
+}
+
+/* Huffman Codes */
+#huffmanCodes {
+    background: #101833;
+    color: #a9f5cd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-height: 300px;
+    overflow: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* Huffman Tree */
+#treeContainer {
+    background: #101833;
+    border-radius: 12px;
+    margin-top: 20px;
+    min-height: 100px;
+    overflow: auto;
+    padding: 15px;
+}
+
+#treeContainer:empty {
+    display: none;
+}
+
+/* Download Button */
+#downloadBtn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #18a77c;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#downloadBtn:hover {
+    background: #20c997;
+}
+
+#downloadBtn[hidden] {
+    display: none;
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .result,
+    .codes,
+    .tree {
+        padding: 15px;
+    }
+}
+
