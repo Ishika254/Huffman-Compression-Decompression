@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuffCompress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>HuffCompress</h1>
+        <p>Efficient Lossless File Compression & Decompression</p>
+
+        <div class="upload-box">
+            <h2>Select Your File</h2>
+            <p>Drag and drop a file or browse your computer</p>
+            <input type="file" id="fileInput">
+        </div>
+
+        <div class="buttons">
+            <button id="compressBtn">Compress File</button>
+            <button id="decompressBtn">Decompress File</button>
+        </div>
+
+        <p id="status">Ready to process your file</p>
+
+        
+<div class="result">
+    <h2 id="resultHeading">Compression Result</h2>
+
+    <p>
+        <span id="firstLabel">Original Size:</span>
+        <span id="originalSize">--</span>
+    </p>
+
+    <p>
+        <span id="secondLabel">Compressed Size:</span>
+        <span id="compressedSize">--</span>
+    </p>
+
+    <p id="ratioRow">
+        Compression Ratio: <span id="ratio">--</span>
+    </p>
+
+    <p id="savedRow">
+        Space Saved: <span id="saved">--</span>
+    </p>
+</div>
+
+
+        <div class="codes" id="codesSection">
+            <h2>Frequency count and Huffman Codes</h2>
+            <pre id="huffmanCodes">Codes will appear here</pre>
+        </div>
+
+        <div class="tree" id="treeSection">
+            <h2>Huffman Binary Tree</h2>
+            <button id="viewTreeBtn">View Tree</button>
+            <div id="treeContainer"></div>
+        </div>
+
+        <a id="downloadBtn" href="#" hidden>Download Processed File</a>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
